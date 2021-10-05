@@ -37,5 +37,128 @@
             "deskripsi": "Daging ayam lembut yang di balut dengan tepung yang renyah"
             
         }
+    ],
+
+    "elektronik":[
+        {
+            "image": "aaaa",
+            "nama": "aaa",
+            "release" : "aaa",
+            "price": "aaa",
+            "color": "aaa",
+            "storage":"aaaa",
+            "os":"aaa",
+            "details": "aaaaaa"
+            
+        },
+        {
+            "image": "aaaa",
+            "nama": "aaa",
+            "release" : "aaa",
+            "price": "aaa",
+            "color": "aaa",
+            "storage":"aaaa",
+            "os":"aaa",
+            "details": "aaaaaa"
+            
+        },
+        {
+            "image": "aaaa",
+            "nama": "aaa",
+            "release" : "aaa",
+            "price": "aaa",
+            "color": "aaa",
+            "storage":"aaaa",
+            "os":"aaa",
+            "details": "aaaaaa"
+            
+        },
+        {
+            "image": "aaaa",
+            "nama": "aaa",
+            "release" : "aaa",
+            "price": "aaa",
+            "color": "aaa",
+            "storage":"aaaa",
+            "os":"aaa",
+            "details": "aaaaaa"
+            
+        },
+        {
+            "image": "aaaa",
+            "nama": "aaa",
+            "release" : "aaa",
+            "price": "aaa",
+            "color": "aaa",
+            "storage":"aaaa",
+            "os":"aaa",
+            "details": "aaaaaa"
+            
+        },
+        {
+            "image": "aaaa",
+            "nama": "aaa",
+            "release" : "aaa",
+            "price": "aaa",
+            "color": "aaa",
+            "storage":"aaaa",
+            "os":"aaa",
+            "details": "aaaaaa"
+            
+        },
+        {
+            "image": "aaaa",
+            "nama": "aaa",
+            "release" : "aaa",
+            "price": "aaa",
+            "color": "aaa",
+            "storage":"aaaa",
+            "os":"aaa",
+            "details": "aaaaaa"
+            
+        },
+        {
+            "image": "aaaa",
+            "nama": "aaa",
+            "release" : "aaa",
+            "price": "aaa",
+            "color": "aaa",
+            "storage":"aaaa",
+            "os":"aaa",
+            "details": "aaaaaa"
+            
+        },
+        {
+            "image": "aaaa",
+            "nama": "aaa",
+            "release" : "aaa",
+            "price": "aaa",
+            "color": "aaa",
+            "storage":"aaaa",
+            "os":"aaa",
+            "details": "aaaaaa"
+            
+        },
+        {
+            "image": "aaaa",
+            "nama": "aaa",
+            "release" : "aaa",
+            "price": "aaa",
+            "color": "aaa",
+            "storage":"aaaa",
+            "os":"aaa",
+            "details": "aaaaaa"
+            
+        },        {
+            "image": "aaaa",
+            "nama": "aaa",
+            "release" : "aaa",
+            "price": "aaa",
+            "color": "aaa",
+            "storage":"aaaa",
+            "os":"aaa",
+            "details": "aaaaaa"
+            
+        }
     ]
 }
