@@ -47,10 +47,13 @@ export default function Index() {
     }, []);
 
     // AWALAN DIALOG 
+    const [data, setData] = useState();
+
     const [open, setOpen] = useState(false);
 
-    const handleClickOpen = (name,deskripsi) => {
-      setOpen(true);
+    const handleClickOpen = (index) => {
+      setData(post[index.name])
+        setOpen(true);
     };
     const handleClose = () => {
       setOpen(false);
@@ -102,7 +105,7 @@ export default function Index() {
                 <p className="title">MENU</p>
             </div>
 
-            {post.map((menu) => (
+            {post.map((menu, index) => (
             // <Grid  direction="row"  >
             // <Grid container md={11} spacing={4} stle={{marginTop: "50px", marginLeft:"50px"}}>
             //     {/* <Card style={{marginBottom:"20px", marginLeft:"160px", marginRight:"160px"}}> */}
@@ -148,7 +151,7 @@ export default function Index() {
                                         </Grid>
                                         <Grid item>
                                             <CardActions>
-                                                <Button variant="outlined" size="small" onClick={handleClickOpen}>Details</Button>
+                                                <Button variant="outlined" size="small" onClick={() => this.handleClickOpen(index)}>Details</Button>
                                             </CardActions>
                                         </Grid>
                                     </Grid>
@@ -163,7 +166,7 @@ export default function Index() {
                             open={open}
                         >
                             <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-                                UHUY
+                                {data}}
                             </BootstrapDialogTitle>
                             <DialogContent dividers>
                                 <Typography gutterBottom>
