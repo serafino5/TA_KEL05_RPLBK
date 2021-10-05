@@ -1,0 +1,41 @@
+{
+    "menu":[
+        {
+            "name": "McSpicy",
+            "deskripsi": "Burger dengan daging paha ayam goreng yang empuk, renyah dan pedas, dilengkapi dengan selada segar dan saus spesial di dalam roti berwijen."
+        },
+        {
+            "name": "Big Mac® Beef Rasher ",
+            "deskripsi": "Burger Big Mac dengan extra tambahan 3 lembar Beef Rasher, yaitu lembaran daging yang dimasak secara grill."
+        },
+        {
+            "name": "Big Mac®",
+            "deskripsi": "Burger Ikonik McDonald's. Dua lapis daging sapi gurih disajikan dengan saus spesial, selada segar, keju, acar timun, bawang, diapit roti bertabur wijen"
+        },
+        {
+            "name": "PaNas 2 with Fries",
+            "deskripsi": "2 pcs Ayam Goreng khas McDonald's dengan kentang goreng dan minuman FruitTea lemon yang menyegarkan. Tersedia dalam pilihan Ayam Krispy atau Spicy"
+            
+        },
+        {
+            "name": "PaNas 2 with Rice",
+            "deskripsi": "2 pcs Ayam Goreng khas McDonald's dengan nasi hangat dan minuman FruitTea lemon yang menyegarkan. Tersedia dalam pilihan Ayam Krispy atau Spicy"
+            
+        },
+        {
+            "name": "PaNas Spesial",
+            "deskripsi": "Ayam Goreng khas McDonald's dengan nasi hangat dan tambahan scrambled egg serta minuman FruitTea lemon yang menyegarkan. Tersedia dalam pilihan Ayam Krispy atau Spicy"
+            
+        },
+        {
+            "name": "McNuggets",
+            "deskripsi": "Nugget ayam McDonald's dan saus Sweet & Sour atau Barbeque pilihan Anda. Tersedia dalam pilihan 4, 6 dan 9 pieces"
+            
+        },
+        {
+            "name": "Chicken Fingers",
+            "deskripsi": "Daging ayam lembut yang di balut dengan tepung yang renyah"
+            
+        }
+    ]
+}
