@@ -124,7 +124,7 @@ export default function Index() {
             
                                     <>
                     <Grid container direction="row" spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-                        <Paper sx={{ p: 2, margin: 'auto', maxWidth: 300, flexGrow: 1 }} style={{ marginBottom: "20px", marginLeft: "160px", marginRight: "160px" }}>
+                        <Paper sx={{ p: 2, margin: 'auto', maxWidth: 300, flexGrow: 1 }} style={{ maxWidth:"500px", marginBottom: "20px", marginLeft: "160px", marginRight: "160px" }}>
                             <Grid container spacing={2}>
                                 <Grid item>
                                     <ButtonBase sx={{ width: 128, height: 128 }}>
