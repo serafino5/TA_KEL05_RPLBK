@@ -24,8 +24,10 @@ import PropTypes from 'prop-types';
 const Img = styled('img')({
     margin: 'auto',
     display: 'block',
-    maxWidth: '150px',
-    maxHeight: '150px',
+    // maxWidth: '150px',
+    // maxHeight: '150px',
+    height:"200px",
+    width:"150px",
   });
 
 
