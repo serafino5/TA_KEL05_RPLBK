@@ -1,163 +1,93 @@
 {
-    "menu":[
-        {
-            "name": "McSpicy",
-            "deskripsi": "Burger dengan daging paha ayam goreng yang empuk, renyah dan pedas, dilengkapi dengan selada segar dan saus spesial di dalam roti berwijen."
-        },
-        {
-            "name": "Big Mac® Beef Rasher ",
-            "deskripsi": "Burger Big Mac dengan extra tambahan 3 lembar Beef Rasher, yaitu lembaran daging yang dimasak secara grill."
-        },
-        {
-            "name": "Big Mac®",
-            "deskripsi": "Burger Ikonik McDonald's. Dua lapis daging sapi gurih disajikan dengan saus spesial, selada segar, keju, acar timun, bawang, diapit roti bertabur wijen"
-        },
-        {
-            "name": "PaNas 2 with Fries",
-            "deskripsi": "2 pcs Ayam Goreng khas McDonald's dengan kentang goreng dan minuman FruitTea lemon yang menyegarkan. Tersedia dalam pilihan Ayam Krispy atau Spicy"
-            
-        },
-        {
-            "name": "PaNas 2 with Rice",
-            "deskripsi": "2 pcs Ayam Goreng khas McDonald's dengan nasi hangat dan minuman FruitTea lemon yang menyegarkan. Tersedia dalam pilihan Ayam Krispy atau Spicy"
-            
-        },
-        {
-            "name": "PaNas Spesial",
-            "deskripsi": "Ayam Goreng khas McDonald's dengan nasi hangat dan tambahan scrambled egg serta minuman FruitTea lemon yang menyegarkan. Tersedia dalam pilihan Ayam Krispy atau Spicy"
-            
-        },
-        {
-            "name": "McNuggets",
-            "deskripsi": "Nugget ayam McDonald's dan saus Sweet & Sour atau Barbeque pilihan Anda. Tersedia dalam pilihan 4, 6 dan 9 pieces"
-            
-        },
-        {
-            "name": "Chicken Fingers",
-            "deskripsi": "Daging ayam lembut yang di balut dengan tepung yang renyah"
-            
-        }
-    ],
-
     "elektronik":[
         {
-            "image": "aaaa",
-            "nama": "aaa",
-            "release" : "aaa",
-            "price": "aaa",
-            "color": "aaa",
-            "storage":"aaaa",
-            "os":"aaa",
-            "details": "aaaaaa"
+            "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg",
+            "nama": "Apple Iphone 13 Pro",
+            "release" : "24 September 2021",
+            "price": "$1099 - $1299",
+            "color": "Graphite, Gold, Silver, Sierra Blue",
+            "storage":"128GB/256GB/1TB",
+            "os":"iOS 15",
+            "details": "RAM: 6 GB",
+            "details1": "Camera: 12 MP",
+            "details2": "Size: 6.1 inch",
+            "details3": "Battery: 3095 mAh",
+            "details4": "Chipset: Apple A15 Bionic"
             
         },
         {
-            "image": "aaaa",
-            "nama": "aaa",
-            "release" : "aaa",
-            "price": "aaa",
-            "color": "aaa",
-            "storage":"aaaa",
-            "os":"aaa",
-            "details": "aaaaaa"
+            "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-flip3-5g.jpg",
+            "nama": "Samsung Galaxy Z Flip3 5G",
+            "release" : "27 Agustus 2021",
+            "price": "$999 - $1199",
+            "color": "Phantom Black, Green, Lavender, Cream, White, Pink, Gray",
+            "storage":"128GB/256GB",
+            "os":"Android 11, One UI 3.1.1",
+            "details": "RAM: 8 GB",
+            "details1": "Camera : 12 MP",
+            "details2": "Size : 6.7 inch",
+            "details3": "Battery: 3300 mAh",
+            "details4": "Chipset: Snapdragon 888 5G"
             
         },
         {
-            "image": "aaaa",
-            "nama": "aaa",
-            "release" : "aaa",
-            "price": "aaa",
-            "color": "aaa",
-            "storage":"aaaa",
-            "os":"aaa",
-            "details": "aaaaaa"
+            "image": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-fold3-5g.jpg",
+            "nama": "Samsung Galaxy Z Fold3 5G",
+            "release" : "27 Agustus 2021",
+            "price": "$1799 - $1899",
+            "color": "Phantom Black, Phantom Silver, Phantom Green",
+            "storage":"256GB/512GB",
+            "os":"Android 11, One UI 3.1.1",
+            "details": "RAM: 12 GB",
+            "details1": "Camera : 12 MP",
+            "details2": "Size : 7.6 inch",
+            "details3": "Battery: 4400 mAh",
+            "details4": "Chipset: Snapdragon 888 5G"
             
         },
         {
-            "image": "aaaa",
-            "nama": "aaa",
-            "release" : "aaa",
-            "price": "aaa",
-            "color": "aaa",
-            "storage":"aaaa",
-            "os":"aaa",
-            "details": "aaaaaa"
+            "image": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-12-pro-max-.jpg",
+            "nama": "Apple iPhone 12 Pro Max",
+            "release" : "13 November 2020",
+            "price": "$999 - $1099",
+            "color": "Silver, Graphite, Gold, Pacific Blue",
+            "storage":"128GB/256GB/512GB",
+            "os":"iOS 14.1, up to iOS 15",
+            "details": "RAM: 6 GB",
+            "details1": "Camera : 12 MP",
+            "details2": "Size : 6.7 inch",
+            "details3": "Battery: 3687 mAh",
+            "details4": "Chipset: Apple A14 Bionic"
             
         },
         {
-            "image": "aaaa",
-            "nama": "aaa",
-            "release" : "aaa",
-            "price": "aaa",
-            "color": "aaa",
-            "storage":"aaaa",
-            "os":"aaa",
-            "details": "aaaaaa"
+            "image": "https://dlcdnwebimgs.asus.com/gain/AABE2893-9E3A-4ED4-B95B-6173EC52E028/w185/fwebp",
+            "nama": "ROG Zephyrus G14 GA401QEC-AW",
+            "release" : "19 Agustus 2021",
+            "price": "$2199",
+            "color": "Eclipse Gray",
+            "storage":"1TB M.2 NVMe™ PCIe® 3.0 SSD",
+            "os":"Windows 10 Home",
+            "details": "GPU: GeForce RTX™ 3050 Ti Laptop GPU",
+            "details1": "Layar: IPS dengan resolusi WQHD 2560 x 1440 piksel, Pantone Validated, refresh rate 120Hz, Anti-Glare Panel dengan 100% sRGB color gamut, Asus Splendid ",
+            "details2": "Size : 14 inch",
+            "details3": "RAM: 16GB DDR4 3200MHz, upgradeable up to 32GB",
+            "details4": "Processor: AMD Ryzen 9 5900HS octa-core (16 thread) 3,3GHz TurboBoost up to 4,6GHz"
             
         },
         {
-            "image": "aaaa",
-            "nama": "aaa",
-            "release" : "aaa",
-            "price": "aaa",
-            "color": "aaa",
-            "storage":"aaaa",
-            "os":"aaa",
-            "details": "aaaaaa"
-            
-        },
-        {
-            "image": "aaaa",
-            "nama": "aaa",
-            "release" : "aaa",
-            "price": "aaa",
-            "color": "aaa",
-            "storage":"aaaa",
-            "os":"aaa",
-            "details": "aaaaaa"
-            
-        },
-        {
-            "image": "aaaa",
-            "nama": "aaa",
-            "release" : "aaa",
-            "price": "aaa",
-            "color": "aaa",
-            "storage":"aaaa",
-            "os":"aaa",
-            "details": "aaaaaa"
-            
-        },
-        {
-            "image": "aaaa",
-            "nama": "aaa",
-            "release" : "aaa",
-            "price": "aaa",
-            "color": "aaa",
-            "storage":"aaaa",
-            "os":"aaa",
-            "details": "aaaaaa"
-            
-        },
-        {
-            "image": "aaaa",
-            "nama": "aaa",
-            "release" : "aaa",
-            "price": "aaa",
-            "color": "aaa",
-            "storage":"aaaa",
-            "os":"aaa",
-            "details": "aaaaaa"
-            
-        },        {
-            "image": "aaaa",
-            "nama": "aaa",
-            "release" : "aaa",
-            "price": "aaa",
-            "color": "aaa",
-            "storage":"aaaa",
-            "os":"aaa",
-            "details": "aaaaaa"
+            "image": "https://dlcdnwebimgs.asus.com/gain/5DB60352-81E6-440B-8850-1B2A765B619B/w185/fwebp",
+            "nama": "ROG Zephyrus S17 GX703HM-I736G6T-O",
+            "release" : "15 Mei 2021",
+            "price": "$4699",
+            "color": "Off Black",
+            "storage":"2TB M.2 NVMe™ PCIe® 4.0 SSD",
+            "os":"Windows 10 Home",
+            "details1": "Layar: IPS-Level WQHD (2560 x 1440), 165Hz, 3ms, 100% DCI-P3, PANTONE Validated, Dolby Vision, G-Sync",
+            "details": "GPU: NVIDIA® GeForce RTX™ 3080",
+            "details2": "Size : 17 inch",
+            "details3": "RAM: 2x16GB DDR4 3200MHz RAM (Dual Channel)",
+            "details4": "Processor: 11th Gen Intel Core i9-11900H"
             
         }
     ]

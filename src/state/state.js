@@ -18,8 +18,10 @@ import PropTypes from 'prop-types';
 const Img = styled('img')({
     margin: 'auto',
     display: 'block',
-    height:"200px",
-    width:"150px",
+    height:"120px",
+    width:"100px",
+    marginTop:"15px",
+    marginLeft:"5px"
   });
 
 
@@ -34,17 +36,37 @@ export default function Index() {
         });
     
     useEffect(() => {
-        axios.get('http://localhost:3000/menu')
+        axios.get('http://localhost:3000/elektronik')
             .then(response => setPost(response.data));
     }, []);
 
     // AWALAN DIALOG 
-    const [data, setData] = useState();
+    const [nama, setNama] = useState();
+    const [release, setRelease] = useState();
+    const [price, setPrice] = useState();
+    const [color, setColor] = useState();
+    const [storage, setStorage] = useState();
+    const [os, setOS] = useState();
+    const [details, setDetails] = useState();
+    const [details1, setDetails1] = useState();
+    const [details2, setDetails2] = useState();
+    const [details3, setDetails3] = useState();
+    const [details4, setDetails4] = useState();
 
     const [open, setOpen] = useState(false);
 
     const handleClickOpen = (index) => {
-      setData(post[index].name)
+      setNama(post[index].nama)
+      setRelease(post[index].release)
+      setPrice(post[index].price)
+      setColor(post[index].color)
+      setStorage(post[index].storage)
+      setOS(post[index].os)
+      setDetails(post[index].details)
+      setDetails1(post[index].details1)
+      setDetails2(post[index].details2)
+      setDetails3(post[index].details3)
+      setDetails4(post[index].details4)
         setOpen(true);
     };
     const handleClose = () => {
@@ -80,29 +102,29 @@ export default function Index() {
         <restaurantContext.Provider value={restaurant}>
             <>
             <div className="titleWrapper">
-                <p className="title">MENU</p>
+                <p className="title">DAFTAR BARANG</p>
             </div>
 
-            {post.map((menu, index) => (
+            {post.map((elektronik, index) => (
             
                     <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} style={{marginBottom:"5px", justifyContent:"center"}}>
                         <Paper sx={{ p: 2, margin: 'auto', maxWidth: 300, flexGrow: 1 }} style={{ maxWidth:"500px", marginBottom: "20px"}}> 
                             <Grid container spacing={2}>
-                                <Grid item justify="center" alignItems="center">
-                                    <Img  alt="complex" src="https://nos.jkt-1.neo.id/mcdonalds/assets/ico/richlink.jpg" />
+                                <Grid item>
+                                    <Img  alt="image" src={elektronik.image} />
                                 </Grid>
-                                <Grid item xs={12} sm container>
-                                    <Grid item xs container direction="column" spacing={2}>
-                                        <Grid item xs>
+                                <Grid item xs={12} sm container >
+                                    <Grid item xs container direction="column" spacing={2} >
+                                        <Grid item xs style={{width:"250px"}}>
                                             <Typography gutterBottom variant="subtitle1" component="div" >
-                                                {menu.name}
+                                                {elektronik.nama}
                                             </Typography>
                                             <Typography variant="body2" gutterBottom>
-                                                {menu.deskripsi}
+                                                {elektronik.color}
                                             </Typography>
-                                            {/* <Typography variant="body2" color="text.secondary">
-                                                {menu.deskripsi}
-                                            </Typography> */}
+                                            <Typography variant="body2" color="text.secondary">
+                                                {elektronik.price}
+                                            </Typography>
                                         </Grid>
                                         <Grid item>
                                             <CardActions>
@@ -118,17 +140,38 @@ export default function Index() {
 
                 <BootstrapDialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
                     <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
-                        {data}
+                        {nama}
                     </BootstrapDialogTitle>
                     <DialogContent dividers style={{maxWidth:"500px",width:"2000px",height:"3500px"}}>
                         <Typography gutterBottom>
-                            DESKRIPSI
+                            Release: {release}
                         </Typography>
                         <Typography gutterBottom>
-                            DESKRIPSI
+                            Price: {price}
                         </Typography>
                         <Typography gutterBottom>
-                            DESKRIPSI
+                            Color: {color}
+                        </Typography>
+                        <Typography gutterBottom>
+                            Strorage: {storage}
+                        </Typography>
+                        <Typography gutterBottom>
+                            OS: {os}
+                        </Typography>
+                        <Typography gutterBottom>
+                            {details}
+                        </Typography>
+                        <Typography gutterBottom>
+                            {details1}
+                        </Typography>
+                        <Typography gutterBottom>
+                            {details2}
+                        </Typography>
+                        <Typography gutterBottom>
+                            {details3}
+                        </Typography>
+                        <Typography gutterBottom>
+                            {details4}
                         </Typography>
                     </DialogContent>
                     <DialogActions>
