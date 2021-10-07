@@ -25,14 +25,14 @@ const Img = styled('img')({
   });
 
 
-var restaurantContext = createContext();
+var placeContext = createContext();
 
 export default function Index() {
     const [post, setPost] = useState([]);
 
-    var [restaurant] = useState({
-        name: "McDonald's",
-        location: "Semarang",
+    var [place] = useState({
+        name: "TOKO ELEKTRONIK CERIA",
+        location: "SEMARANG",
         });
     
     useEffect(() => {
@@ -56,21 +56,21 @@ export default function Index() {
     const [open, setOpen] = useState(false);
 
     const handleClickOpen = (index) => {
-      setNama(post[index].nama)
-      setRelease(post[index].release)
-      setPrice(post[index].price)
-      setColor(post[index].color)
-      setStorage(post[index].storage)
-      setOS(post[index].os)
-      setDetails(post[index].details)
-      setDetails1(post[index].details1)
-      setDetails2(post[index].details2)
-      setDetails3(post[index].details3)
-      setDetails4(post[index].details4)
+        setNama(post[index].nama)
+        setRelease(post[index].release)
+        setPrice(post[index].price)
+        setColor(post[index].color)
+        setStorage(post[index].storage)
+        setOS(post[index].os)
+        setDetails(post[index].details)
+        setDetails1(post[index].details1)
+        setDetails2(post[index].details2)
+        setDetails3(post[index].details3)
+        setDetails4(post[index].details4)
         setOpen(true);
     };
     const handleClose = () => {
-      setOpen(false);
+        setOpen(false);
     };
 
     const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -99,7 +99,7 @@ export default function Index() {
 
       // TUTUPAN DIALOG
     return(
-        <restaurantContext.Provider value={restaurant}>
+        <placeContext.Provider value={place}>
             <>
             <div className="titleWrapper">
                 <p className="title">DAFTAR BARANG</p>
@@ -142,7 +142,7 @@ export default function Index() {
                     <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
                         {nama}
                     </BootstrapDialogTitle>
-                    <DialogContent dividers style={{maxWidth:"500px",width:"2000px",height:"3500px"}}>
+                    <DialogContent dividers style={{maxWidth:"500px",width:"2000px"}}>
                         <Typography gutterBottom>
                             Release: {release}
                         </Typography>
@@ -180,16 +180,16 @@ export default function Index() {
                 </BootstrapDialog>
 
 
-            <Restaurant />
+            <Place/>
             </>
-        </restaurantContext.Provider>
+        </placeContext.Provider>
     );
 
 }
 
 
-function Restaurant(props){
-    var contextData = useContext(restaurantContext)
+const Place = (props) => {
+    var contextData = useContext(placeContext)
     return (
     <div className="titleWrapperrest" style={{marginTop : "20px"}}>
         <p className="titlerest">

@@ -5,8 +5,9 @@ import State from "./state/state"
 function App() {
   return (
     <BrowserRouter>
-      <header style={{background:"red"}}>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/McDonald%27s_Golden_Arches.svg/1200px-McDonald%27s_Golden_Arches.svg.png" width="50" height="50"/>
+      <header style={{background:"#9c0000"}}>
+        <img src="https://live.staticflickr.com/8665/16446526108_302cd3c480_b.jpg" width="100" height="100"/>
+        <h1 style={{color:"white"}}>TOKO ELEKTRONIK CERIA</h1>
       </header>
       <Switch>
         <Route path="/" exact component = {State} />
