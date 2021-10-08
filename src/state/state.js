@@ -55,6 +55,10 @@ export default function Index() {
 
     const [open, setOpen] = useState(false);
 
+    const handleButton = (index) => {
+        alert("Terima Kasih Telah Membeli Produk Disini");
+    };
+
     const handleClickOpen = (index) => {
         setNama(post[index].nama)
         setRelease(post[index].release)
@@ -129,6 +133,7 @@ export default function Index() {
                                         <Grid item>
                                             <CardActions>
                                                 <Button variant="outlined" size="small" onClick={() => handleClickOpen(index)}>Details</Button>
+                                                <Button variant="outlined" size="small" onClick={() => handleButton(index)}>Buy Now</Button>
                                             </CardActions>
                                         </Grid>
                                     </Grid>
