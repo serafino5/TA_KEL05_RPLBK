@@ -12,17 +12,17 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Dialog from "@material-ui/core/Dialog";
 import PropTypes from 'prop-types';
-
+import Box from '@material-ui/core/Box';
 
 
 const Img = styled('img')({
     margin: 'auto',
     display: 'block',
-    height:"120px",
-    width:"100px",
-    marginTop:"15px",
-    marginLeft:"5px"
-  });
+    height: "120px",
+    width: "100px",
+    marginTop: "15px",
+    marginLeft: "5px"
+});
 
 
 var placeContext = createContext();
@@ -33,8 +33,8 @@ export default function Index() {
     var [place] = useState({
         name: "TOKO ELEKTRONIK CERIA",
         location: "SEMARANG",
-        });
-    
+    });
+
     useEffect(() => {
         axios.get('http://localhost:3000/elektronik')
             .then(response => setPost(response.data));
@@ -79,75 +79,77 @@ export default function Index() {
 
     const BootstrapDialog = styled(Dialog)(({ theme }) => ({
         '& .MuDialogContent-root': {
-          padding: theme.spacing(2),
+            padding: theme.spacing(2),
         },
         '& .MuDialogActions-root': {
-          padding: theme.spacing(1),
+            padding: theme.spacing(1),
         },
-      }));
-      
-      const BootstrapDialogTitle = (props) => {
+    }));
+
+    const BootstrapDialogTitle = (props) => {
         const { children, onClose, ...other } = props;
-      
+
         return (
-          <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
-            {children}
-          </DialogTitle>
+            <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
+                {children}
+            </DialogTitle>
         );
-      };
-      
-      BootstrapDialogTitle.propTypes = {
+    };
+
+    BootstrapDialogTitle.propTypes = {
         children: PropTypes.node,
         onClose: PropTypes.func.isRequired,
-      };
+    };
 
-      // TUTUPAN DIALOG
-    return(
+    // TUTUPAN DIALOG
+    return (
         <placeContext.Provider value={place}>
             <>
-            <div className="titleWrapper">
-                <p className="title">DAFTAR BARANG</p>
-            </div>
+                <div className="titleWrapper">
+                    <p className="title">DAFTAR BARANG</p>
+                </div>
 
-            {post.map((elektronik, index) => (
-            
-                    <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} style={{marginBottom:"5px", justifyContent:"center"}}>
-                        <Paper sx={{ p: 2, margin: 'auto', maxWidth: 300, flexGrow: 1 }} style={{ maxWidth:"500px", marginBottom: "20px"}}> 
-                            <Grid container spacing={2}>
-                                <Grid item>
-                                    <Img  alt="image" src={elektronik.image} />
-                                </Grid>
-                                <Grid item xs={12} sm container >
-                                    <Grid item xs container direction="column" spacing={2} >
-                                        <Grid item xs style={{width:"250px"}}>
-                                            <Typography gutterBottom variant="subtitle1" component="div" >
-                                                {elektronik.nama}
-                                            </Typography>
-                                            <Typography variant="body2" gutterBottom>
-                                                {elektronik.color}
-                                            </Typography>
-                                            <Typography variant="body2" color="text.secondary">
-                                                {elektronik.price}
-                                            </Typography>
-                                        </Grid>
-                                        <Grid item>
-                                            <CardActions>
-                                                <Button variant="outlined" size="small" onClick={() => handleClickOpen(index)}>Details</Button>
-                                                <Button variant="outlined" size="small" onClick={() => handleButton(index)}>Buy Now</Button>
-                                            </CardActions>
+                <Box m={10} pt={3}>
+                <Grid container spacing={10} columns={16}>
+                    {post.map((elektronik, index) => (
+                        <Grid item xs={4} >
+                            <Paper sx={{ p: 2, margin: 'auto', maxWidth: 300, flexGrow: 1 }} style={{ maxWidth: "500px", marginBottom: "20px" }}>
+                                <Grid container spacing={2}>
+                                    <Grid item>
+                                        <Img alt="image" src={elektronik.image} />
+                                    </Grid>
+                                    <Grid item xs={12} sm container >
+                                        <Grid item xs container direction="column" spacing={2} >
+                                            <Grid item xs style={{ width: "250px" }}>
+                                                <Typography gutterBottom variant="subtitle1" component="div" >
+                                                    {elektronik.nama}
+                                                </Typography>
+                                                <Typography variant="body2" gutterBottom>
+                                                    {elektronik.color}
+                                                </Typography>
+                                                <Typography variant="body2" color="text.secondary">
+                                                    {elektronik.price}
+                                                </Typography>
+                                            </Grid>
+                                            <Grid item>
+                                                <CardActions>
+                                                    <Button variant="outlined" size="small" onClick={() => handleClickOpen(index)}>Details</Button>
+                                                    <Button variant="outlined" size="small" onClick={() => handleButton(index)}>Buy Now</Button>
+                                                </CardActions>
+                                            </Grid>
                                         </Grid>
                                     </Grid>
                                 </Grid>
-                            </Grid>
-                        </Paper>
-                    </Grid>
-            ))}
-
+                            </Paper>
+                        </Grid>
+                    ))}
+                </Grid>
+                </Box>
                 <BootstrapDialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
                     <BootstrapDialogTitle id="customized-dialog-title" onClose={handleClose}>
                         {nama}
                     </BootstrapDialogTitle>
-                    <DialogContent dividers style={{maxWidth:"500px",width:"2000px"}}>
+                    <DialogContent dividers style={{ maxWidth: "500px", width: "2000px" }}>
                         <Typography gutterBottom>
                             Release: {release}
                         </Typography>
@@ -185,7 +187,7 @@ export default function Index() {
                 </BootstrapDialog>
 
 
-            <Place/>
+                <Place />
             </>
         </placeContext.Provider>
     );
@@ -196,11 +198,11 @@ export default function Index() {
 const Place = (props) => {
     var contextData = useContext(placeContext)
     return (
-    <div className="titleWrapperrest" style={{marginTop : "20px"}}>
-        <p className="titlerest">
-        <h4>{contextData.name}</h4>
-        <h4>{contextData.location}</h4>
-        </p>
-    </div>
+        <div className="titleWrapperrest" style={{ marginTop: "20px" }}>
+            <p className="titlerest">
+                <h4>{contextData.name}</h4>
+                <h4>{contextData.location}</h4>
+            </p>
+        </div>
     );
 }
